@@ -17,7 +17,7 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'common'
+    azureResourceManagerConnection: 'helloworldserviceconnection'
     subscriptionId: '7969c930-0e27-451d-bf68-cf0d7d795f41'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'AzureResourceGroup1'
