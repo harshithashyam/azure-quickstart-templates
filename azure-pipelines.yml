@@ -1,5 +1,5 @@
 variables:
-  ARM_PASS: $(adminPass1)
+  ARM_PASS: $(adminPass)
 
 trigger:
 - none
@@ -21,7 +21,7 @@ steps:
     subscriptionId: '7969c930-0e27-451d-bf68-cf0d7d795f41'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'AzureResourceGroup1'
-    location: 'South India'
+    location: 'South Central US'
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
     csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
